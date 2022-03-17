@@ -13,7 +13,7 @@ The default client loads its access key from the environment variable `FIXER_ACC
 
 ## Installation
 
-    go get -u github.com/peterhellberg/fixer
+    go get -u github.com/hnord-vdx/fixer
 
 ## Usage examples
 
