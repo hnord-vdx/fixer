@@ -113,7 +113,7 @@ func (c *Client) At(ctx context.Context, t time.Time, attributes ...url.Values) 
 }
 
 // Supported currencies (symbol and name)
-func (c *Client) Supported(ctx context.Context) (*Response, error) {
+func (c *Client) SupportedSymbols(ctx context.Context) (*Response, error) {
 	return c.get(ctx, "/symbols")
 }
 
