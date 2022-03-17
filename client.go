@@ -217,3 +217,8 @@ func Latest(ctx context.Context, attributes ...url.Values) (*Response, error) {
 func At(ctx context.Context, t time.Time, attributes ...url.Values) (*Response, error) {
 	return DefaultClient.At(ctx, t, attributes...)
 }
+
+// Supported currencies (symbol and name)
+func SupportedSymbols(ctx context.Context) (*Response, error) {
+	return DefaultClient.SupportedSymbols(ctx)
+}
