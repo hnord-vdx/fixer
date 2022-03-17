@@ -83,12 +83,15 @@ type Rates map[Currency]float64
 // Links is a links object related to the primary data of the Response
 type Links map[string]string
 
+type Symbols map[string]string
+
 // Response data from the Foreign exchange rates and currency conversion API
 type Response struct {
 	Base  Currency `json:"base"`
 	Date  Date     `json:"date"`
 	Rates Rates    `json:"rates"`
 	Links Links    `json:"links,omitempty"`
+	Symbols Symbols  `json:"symbols,omitempty"`
 }
 
 // Currencies is a slice of Currency
