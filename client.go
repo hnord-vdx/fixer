@@ -112,6 +112,11 @@ func (c *Client) At(ctx context.Context, t time.Time, attributes ...url.Values) 
 	return c.get(ctx, "/"+c.date(t), c.query(attributes))
 }
 
+// Supported currencies (symbol and name)
+func (c *Client) Supported(ctx context.Context) (*Response, error) {
+	return c.get(ctx, "/symbols")
+}
+
 func (c *Client) date(t time.Time) string {
 	return t.Format("2006-01-02")
 }
