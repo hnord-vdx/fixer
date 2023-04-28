@@ -27,7 +27,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/peterhellberg/fixer"
+	"github.com/hnord-vdx/fixer"
 )
 
 func main() {
@@ -79,7 +79,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/peterhellberg/fixer"
+	"github.com/hnord-vdx/fixer"
 )
 
 func main() {
